@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="api.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="form">
+            <div style="width: 100%;">
+                <h2 style="display: flex;justify-content: center;">Login</h2>
+                <div>
+                    <!-- <div class="inputs"> -->
+
+                    <input id="logInInput" class="input" type="text" placeholder=" Email"><br>
+                    <input id="loginPassWord" class="input" type="password" placeholder=" Password">
+                    <!-- </div> -->
+                    <!-- <div style="display: flex; justify-content: center; margin-top: 10px;">
+                        <a style="color: blue;" href="">Forget Password?</a>
+
+                    </div> -->
+                    <button onclick="logIn()" class="buttons">Login</button>
+                    <div class="massage">
+                        <h5>Don't have an account ? <a style="color: blue;" href="signUp.html">SignUp</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="massageBottom" id="massageBottom">
+        <h6>Error</h6>
+    </div>
+
+</body>
+
+</html>

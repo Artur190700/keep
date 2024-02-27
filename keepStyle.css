@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.keepHeader {
+    height: 100%;
+    width: 100%;
+    background-color: #202124;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 64px;
+    border-bottom: solid 1.5px #5f6368;
+    display: flex;
+    justify-content: normal;
+}
+
+.headerImgDiv {
+    padding: 22px;
+    margin-left: 6px;
+}
+
+.headerImg {
+    max-width: 17px;
+    max-height: 17px;
+}
+
+.spanKeep {
+    display: inline-block;
+    font-family: "Product Sans", Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    padding-left: 9px;
+    position: relative;
+    top: 8px;
+    vertical-align: middle;
+    color: #e2e2e3;
+}
+
+.inputSearch {
+    width: 722px;
+    background-color: #525355;
+    border: 0px;
+    border-radius: 8px;
+    margin: 7px;
+    margin-left: 160px;
+    /* color: #dfd5c0; */
+    padding: 10px;
+    font-size: 17px;
+    margin-top: 8px;
+    padding-left: 57px;
+    color: black;
+}
+
+.inputSearch:focus {
+    background-color: #ffffff;
+}
+
+.svg {
+    color: #dfd5c0;
+
+}
+
+.button {
+    border: 0;
+    background-color: transparent;
+}
+
+.plusButtonImg {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.flex {
+    display: flex;
+    justify-content: end;
+    margin-left: 140px;
+}
+
+.mainNoteContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.mainNote {
+    justify-content: center;
+    background-color: #202124;
+    border-color: #5f6368;
+    overflow: visible;
+    width: 632px;
+    border: solid 0.5px #5f6368;
+    border-radius: 9px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.inputInside {
+    margin: 5px;
+    margin-top: 9px;
+    color: #dfd5c0;
+    width: 95%;
+    background-color: #202124;
+    border: 0;
+    height: 56px;
+    font-size: larger;
+    padding-left: 9px;
+    margin-bottom: 4px;
+    outline: none;
+}
+
+.secondInput {
+    height: 72px;
+}
+
+textarea {
+    resize: none;
+}
+
+.color {
+    color: #dfd5c0;
+}
+
+.margin {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.df {
+    display: flex;
+    justify-content: end;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #25262a;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bodyForSaveNotes {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    /* margin-left: 100px; */
+    /* height: 290px; */
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.savedNote {
+    background-color: #202124;
+    border: solid 0.2px #5f6368;
+    border-radius: 9px;
+    width: 235px;
+    /* height: 230px; */
+    color: #dfd5c0;
+    padding: 10px;
+}
+
+.titleInsideNote {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.savedNote:hover {
+    cursor: pointer;
+    border: solid 0.2px #d4d4d4;
+    /* transform: scale(1.05); */
+}
+
+.textWrap {
+    word-break: break-all;
+    max-height: 100px;
+    height: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.positionAbsolute {
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-height: 200px;
+    min-width: 300px;
+    /* transition: 1s; */
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.filter {
+    opacity: 0;
+}
+
+.trash {
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    padding-left: 173px;
+
+
+}
+
+.trashImg {
+    position: absolute;
+    left: 764px;
+    top: -91px;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.trashImg:hover {
+    cursor: pointer;
+}
+
+.userDiv {
+    color: #dfd5c0;
+    max-width: 110px;
+    margin-left: 288px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.massageBottom {
+    position: absolute;
+    height: 50px;
+    background-color: red;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -70px;
+    transition: 800ms;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 7px #b61f1f;
+}
