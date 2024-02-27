@@ -1,4 +1,4 @@
-let baseUrl = 'http://localhost:3004';
+let baseUrl = '16.171.162.30:3004';
 function logIn() {
     let login = document.getElementById('logInInput').value;
     let password = document.getElementById('loginPassWord').value;
