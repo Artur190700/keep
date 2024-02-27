@@ -1,10 +1,10 @@
-let baseUrl = '16.171.162.30:3004';
+let baseUrl = 'http://16.171.162.30:3004';
 function logIn() {
     let login = document.getElementById('logInInput').value;
     let password = document.getElementById('loginPassWord').value;
     let token = localStorage.getItem('token');
     fetch(baseUrl + '/login', {
-        method: 'post',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             // 'Access-Control-Allow-Origin': '*' // This line should be removed
