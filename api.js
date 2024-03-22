@@ -207,3 +207,20 @@ function clean(id) {
 
     // }
 }
+function search_task() {
+
+    let input = document.getElementById('inputSerach').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('savedNote');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            // console.log(x[i]);
+            x[i].style.display = ''
+        }
+    }
+
+}
