@@ -145,7 +145,9 @@ function remove(id) {
 }
 document.getElementById('inputSerach').addEventListener('keypress', search);
 function search() {
-    console.log(document.getElementById('inputSerach').value);
+    let input = document.getElementById('inputSerach').value;
+    input = input.toLowerCase();
+    console.log(input);
 }
 start();
 function logOut() {
