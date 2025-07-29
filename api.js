@@ -1,4 +1,4 @@
-let baseUrl = 'http://16.171.162.30:3004';
+let baseUrl = 'http://141.145.198.162';
 function logIn() {
     let login = document.getElementById('logInInput').value;
     let password = document.getElementById('loginPassWord').value;
